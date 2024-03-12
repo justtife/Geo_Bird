@@ -3,7 +3,6 @@
   background: #26535e;
   padding: 120px 0px;
   clip-path: polygon(0 0, 100% 0, 100% 95%, 0 100%);
-
   &:before {
     position: absolute;
     content: "";
@@ -83,7 +82,7 @@
   }
 }
 .feature-item {
-  padding: 30px 35px;
+  padding: 30px 15px;
   margin-bottom: 25px;
   background: #fff;
   box-shadow: 0px 0px 10px 3px rgba(0, 0, 0, 0.08);
@@ -96,7 +95,7 @@
   &:hover {
     margin-top: -10px;
     .feature-icon {
-      color: #ff1949;
+      color: rgb(19, 2, 78);
     }
   }
   .feature-icon {
@@ -118,7 +117,7 @@
 .feature-item.feature-style-2 {
   &:hover {
     border-color: transparent;
-    background: #ff1949;
+    background: rgb(19, 2, 78);
     .feature-icon {
       color: #fff;
     }
@@ -139,7 +138,7 @@
     font-size: 40px;
     left: 25px;
     top: 26px;
-    color: #ff1949;
+    color: rgb(19, 2, 78);
   }
   h4 {
     margin-bottom: 10px;
@@ -169,8 +168,8 @@
       text-align: center;
       left: 0px;
       display: inline-block;
-      border: 2px solid #ff1949;
-      color: #ff1949;
+      border: 2px solid rgb(19, 2, 78);
+      color: rgb(19, 2, 78);
       font-size: 25px;
       z-index: 1;
     }
@@ -187,7 +186,7 @@
         left: 0px;
         width: 2px;
         height: 100%;
-        background: #ff1949;
+        background: rgb(19, 2, 78);
         left: 33px;
         top: 67.5px;
       }

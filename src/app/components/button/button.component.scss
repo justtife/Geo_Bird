@@ -5,15 +5,13 @@
   padding: 10px 35px;
 }
 .btn-main {
-  background: #ff1949;
-  color: #fff;
-  border-color: #ff1949;
+  color: rgb(19, 2, 78);
+  border: 1px solid rgb(19, 2, 78);
   font-weight: 900;
   border-radius: 25px;
   &:hover {
     color: #fff;
-    border-color: #385777;
-    background: #385777;
+    background: rgb(19, 2, 78);
   }
   i {
     margin-right: 10px;
