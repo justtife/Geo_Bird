@@ -1,12 +1,19 @@
 .site-navigation {
   border-bottom: 1px solid #f5f7fa;
-  padding: 12px 0px;
+  padding: 10px 0px;
   .navbar .navbar-brand {
     line-height: 25px;
     text-align: center;
     font-size: 20px;
     font-weight: bolder;
     color: white;
+  }
+  .navbar-toggler {
+    border: none;
+    span {
+      font-size: 35px;
+      color: #eee;
+    }
   }
 }
 .navbar-nav {
@@ -20,15 +27,7 @@
 .navbar-nav .nav-link i {
   margin-left: 5px;
 }
-.navbar-toggler-icon {
-  display: inline-block;
-  width: 1.5em;
-  height: 1.5em;
-  content: "";
-  vertical-align: middle;
-  background: no-repeat 50%;
-  background-size: 100% 100%;
-}
+
 .dropdown-menu.show {
   -webkit-animation: 0.2s forwards b;
   animation: 0.2s forwards b;
@@ -64,7 +63,7 @@
 }
 .nav-tp {
   border-bottom: 1px solid rgba(255, 255, 255, 0.15);
-  padding: 12px 0px;
+  padding: 8px 0px;
   z-index: 999;
   margin-bottom: -100px;
   position: relative;
