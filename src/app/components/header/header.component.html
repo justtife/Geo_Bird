@@ -3,7 +3,7 @@
   <div class="site-navigation main_menu nav-tp" id="mainmenu-area">
     <nav class="navbar navbar-expand-lg">
       <div class="container">
-        <a class="navbar-brand" href="index.html">
+        <a class="navbar-brand" routerLink="/">
           GeoBird <sup>®</sup><br /><span
             style="font-size: 35px; color: rgb(19, 2, 78)"
             >Consult</span
@@ -16,45 +16,42 @@
           data-toggle="collapse"
           data-target="#navbarMenu"
           aria-controls="navbarMenu"
-          aria-expanded="false"
+          aria-expanded="true"
           aria-label="Toggle navigation"
+          (click)="showDropdown()"
         >
           <span class="bi bi-list"></span>
         </button>
         <!-- Collapse -->
-        <div class="collapse navbar-collapse" id="navbarMenu">
+        <div
+          class="collapse navbar-collapse"
+          [class.show]="isTrue"
+          id="navbarMenu"
+        >
           <ul class="navbar-nav ml-auto">
             <li class="nav-item dropdown">
               <a
                 class="nav-link dropdown-toggle"
-                href="#"
+                routerLink=""
                 id="navbar3"
                 role="button"
                 data-toggle="dropdown"
                 aria-haspopup="true"
                 aria-expanded="false"
               >
-                Home<i class="bi bi-caret-down-fill"></i>
+                Home
               </a>
-              <div class="dropdown-menu" aria-labelledby="navbar3">
-                <a class="dropdown-item" href="index.html"> Home 1 </a>
-                <a class="dropdown-item" href="index-2.html"> Home 2 </a>
-                <a class="dropdown-item" href="index-3.html"> Home 3 </a>
-                <a class="dropdown-item" href="index-4.html"> Home 4 </a>
-                <a class="dropdown-item" href="index-5.html"> Home 5 </a>
-                <a class="dropdown-item" href="index-6.html"> Home 6 </a>
-                <a class="dropdown-item" href="index-7.html"> Home 7 </a>
-                <a class="dropdown-item" href="index-8.html">
-                  Home 8 <span>New</span>
-                </a>
-              </div>
             </li>
             <li class="nav-item">
-              <a href="about.html" class="nav-link js-scroll-trigger">
+              <a routerLink="about" class="nav-link js-scroll-trigger">
                 About Us
               </a>
             </li>
-            <li class="nav-item dropdown">
+            <li
+              class="nav-item dropdown"
+              (mouseenter)="isHovered = true"
+              (mouseleave)="isHovered = false"
+            >
               <a
                 class="nav-link dropdown-toggle"
                 href="#"
@@ -66,67 +63,30 @@
               >
                 Courses<i class="bi bi-caret-down-fill"></i>
               </a>
-              <div class="dropdown-menu" aria-labelledby="navbar3">
-                <a class="dropdown-item" href="course-grid.html">
-                  Course Style 1
-                </a>
-                <a class="dropdown-item" href="course-grid-2.html">
-                  Course Style 2
-                </a>
-
-                <a class="dropdown-item" href="course-grid-3.html">
-                  Course Style 3
-                </a>
-                <a class="dropdown-item" href="course-grid-4.html">
-                  Course Style 4
-                </a>
-                <a class="dropdown-item" href="course-grid-5.html">
-                  Course Filter
-                </a>
-                <a class="dropdown-item" href="course-grid-6.html">
-                  Course List
-                </a>
-                <a class="dropdown-item" href="course-single.html">
-                  Course Details Style 1
-                </a>
-                <a class="dropdown-item" href="course-single2.html">
-                  Course Details Style Tab
-                </a>
-                <a class="dropdown-item" href="course-single3.html">
-                  Course Details Style Tab2
-                </a>
-                <a class="dropdown-item" href="course-single4.html">
-                  Course Details Classic
-                </a>
-              </div>
-            </li>
-            <li class="nav-item dropdown">
-              <a
-                class="nav-link dropdown-toggle"
-                href="#"
-                id="navbar3"
-                role="button"
-                data-toggle="dropdown"
-                aria-haspopup="true"
-                aria-expanded="false"
+              <div
+                class="dropdown-menu"
+                [class.show]="isHovered"
+                aria-labelledby="navbar3"
               >
-                Pages<i class="bi bi-caret-down-fill"></i>
-              </a>
-              <div class="dropdown-menu" aria-labelledby="navbar3">
-                <a class="dropdown-item" href="instructors.html">
-                  Instructor
+                <a class="dropdown-item" href="course-grid.html"> My Course </a>
+                <a class="dropdown-item" routerLink="/course">
+                  Free Training
                 </a>
-                <a class="dropdown-item" href="login-registration.html">
-                  Login
-                </a>
-                <a class="dropdown-item" href="404.html"> 404 </a>
+                <a class="dropdown-item" routerLink="/course"> Beginners </a>
+
+                <a class="dropdown-item" routerLink="/course"> Intermediate </a>
+                <a class="dropdown-item" routerLink="/course"> Professional </a>
+                <a class="dropdown-item" routerLink="/course"> Advance </a>
               </div>
             </li>
             <li class="nav-item">
-              <a href="contact.html" class="nav-link"> Contact </a>
+              <a routerLink="/contact" class="nav-link">Contact Us</a>
             </li>
           </ul>
-<app-button [text]="'Login'" [icon]="'box-arrow-in-right'"></app-button>
+          <app-button
+            [text]="'Login'"
+            [icon]="'box-arrow-in-right'"
+          ></app-button>
           <!-- <a href="#" class="btn btn-main btn-small"
             ><i class="bi bi-box-arrow-in-right mr-2"></i> Login</a
           > -->

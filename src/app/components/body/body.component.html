@@ -9,10 +9,7 @@
             Spend some time to visit our website or head office and discover our
             current courses, enrollment procedure, and registration deadline.
           </p>
-          <app-button
-            [text]="'Our Courses'"
-            [icon]="'book'"
-          ></app-button>
+          <app-button [text]="'Our Courses'" [icon]="'book'" [route]="'courses'"></app-button>
         </div>
       </div>
       <div class="col-lg-6 col-xl-6">
@@ -50,6 +47,7 @@
           [text]="'Learn More'"
           [icon]="'box-arrow-in-right'"
           [size]="'large'"
+          [route]="'about'"
         ></app-button>
       </div>
     </div>
@@ -184,7 +182,7 @@
       </div>
       <div class="col-lg-6 col-md-12 py-4">
         <div class="section-heading">
-          <span class="subheading">Top Categories</span>
+          <span class="subheading">Top Features</span>
           <h3>Learn new skills to go ahead for your career</h3>
         </div>
 
@@ -204,6 +202,97 @@
             <i class="bi bi-info-square"></i>
             <h4>World Class Support</h4>
             <p>Exceptional support at your fingertips.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="section-padding category-section">
+  <div class="container">
+    <div class="row align-items-center justify-content-center">
+      <div class="col-lg-6">
+        <div class="section-heading text-center">
+          <span class="subheading">Top Categories</span>
+          <h3>Our Top Categories</h3>
+          <p>
+            Explore our top courses, meticulously crafted to provide
+            unparalleled learning experiences. Dive into cutting-edge content,
+            expertly curated to empower your professional growth and success.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="row no-gutters">
+      <div class="col-lg-3 col-md-6">
+        <div
+          class="course-category"
+          style="background: url('../../../assets/course/course-1.jpg')"
+        >
+          <div class="category-icon">
+            <i class="bi bi-laptop"></i>
+          </div>
+          <h4><a href="#">Free Training</a></h4>
+          <p>7 Topics</p>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6">
+        <div
+          class="course-category"
+          style="background: url('../../../assets/course/course-1.jpg')"
+        >
+          <div class="category-icon">
+            <i class="bi bi-laptop"></i>
+          </div>
+          <h4><a href="#">Beginners Courses</a></h4>
+          <p>7 Topics</p>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6">
+        <div
+          class="course-category"
+          style="background: url('../../../assets/course/course2.jpg')"
+        >
+          <div class="category-icon">
+            <i class="bi bi-laptop"></i>
+          </div>
+          <app-button
+            [icon]="'pen'"
+            [text]="'Enroll'"
+            style="display: none; text-align: center; z-index: 999"
+          ></app-button>
+          <h4><a href="#">Intermediate Courses</a></h4>
+          <p>18 Topics</p>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6">
+        <div
+          class="course-category"
+          style="background: url('../../../assets/course/course3.jpg')"
+        >
+          <div class="category-icon">
+            <i class="bi bi-laptop"></i>
+          </div>
+          <h4><a href="#">Advance Courses</a></h4>
+          <p>16 Topics</p>
+        </div>
+      </div>
+    </div>
+    <div class="row justify-content-center">
+      <div class="col-lg-6">
+        <div class="text-center mt-5">
+          <p>
+            From foundational principles to advanced techniques, our top courses
+            offer comprehensive knowledge tailored to elevate your skills and
+            career prospects.
+          </p>
+          <div class="course-btn mt-4">
+            <app-button
+              [text]="'More Details'"
+              [icon]="'menu'"
+              [size]="'large'"
+            ></app-button>
           </div>
         </div>
       </div>

@@ -91,3 +91,27 @@
   padding-top: 10px;
   opacity: 0;
 }
+
+@media (max-width: 768px) {
+  .nav-tp {
+    margin-bottom: 0px;
+    background: #263b5e;
+  }
+}
+@media (max-width: 992px) {
+  .nav-tp {
+    margin-bottom: 0px;
+    background: #263b5e;
+  }
+}
+@media (max-width: 992px) {
+  .site-navigation {
+    text-align: center;
+  }
+  .dropdown-menu {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+}
