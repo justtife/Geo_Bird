@@ -160,7 +160,12 @@
   color: #222;
 }
 @media (max-width: 480px) {
-  .subscribe-form .btn span {
-    display: none;
+  .subscribe-form {
+    .btn span {
+      display: none;
+    }
+    .form-control{
+      padding: 0 60px 0 25px;
+    }
   }
 }
