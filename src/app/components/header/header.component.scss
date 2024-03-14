@@ -1,5 +1,6 @@
 .site-navigation {
   border-bottom: 1px solid #f5f7fa;
+  background-color: #26535e;
   padding: 10px 0px;
   .navbar .navbar-brand {
     line-height: 25px;
@@ -19,7 +20,6 @@
 .menu_fixed{
   position: fixed !important;
   top: 0px;
-  background-color: #26535e;
   width: 100%;
   z-index: 999;
   transition: all 1s ease;

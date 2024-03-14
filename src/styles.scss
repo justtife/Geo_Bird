@@ -44,6 +44,12 @@ p {
 a {
   text-decoration: none !important;
 }
+ul {
+  padding: 0 !important;
+  li {
+    list-style-type: none;
+  }
+}
 // .btn-main {
 //   color: #fff !important;
 //   border-color: #FF1949 !important;
@@ -52,15 +58,16 @@ a {
 // /*--------------------
 //  TYPOGRAPHY
 // -----------------*/
-// h1,
-// h2,
-// h3,
-// h4,
-// h5,
-// h6 {
-//   font-family: "Quicksand", sans-serif !important;
-//   color: #07294D !important;
-// }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Quicksand", sans-serif !important;
+  color: #07294d !important;
+  font-weight: bolder;
+}
 
 // h1 a,
 // h2 a,
