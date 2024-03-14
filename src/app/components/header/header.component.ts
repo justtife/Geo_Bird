@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, HostListener } from '@angular/core';
 import { ButtonComponent } from '../button/button.component';
 import { RouterModule } from '@angular/router';
 @Component({
@@ -13,6 +13,15 @@ export class HeaderComponent {
   isTrue = false;
   showDropdown() {
     this.isTrue = !this.isTrue;
+  }
+  revealScrollToTop = false;
+  @HostListener('window:scroll', [])
+  onWindowScroll() {
+    const windowScroll = window.scrollY || document.documentElement.scrollTop || document.body.scrollTop || 0;
+    this.revealScrollToTop = windowScroll > 200;
+  }
+  scrollToTop() {
+    window.scrollTo({ top: 0, behavior: 'smooth' }); // Smooth scroll to top
   }
 
 }

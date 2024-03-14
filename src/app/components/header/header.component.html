@@ -1,6 +1,18 @@
+<!-- $(window).scroll(function () {
+  var window_top = $(window).scrollTop() + 1;
+  if (window_top > 50) {
+    $('.site-navigation').addClass('menu_fixed animated fadeInDown');
+  } else {
+    $('.site-navigation').removeClass('menu_fixed animated fadeInDown');
+  }
+}); -->
 <header>
   <!-- Main Menu Start -->
-  <div class="site-navigation main_menu nav-tp" id="mainmenu-area">
+  <div
+    class="site-navigation main_menu nav-tp"
+    [class.menu_fixed]="revealScrollToTop"
+    id="mainmenu-area"
+  >
     <nav class="navbar navbar-expand-lg">
       <div class="container">
         <a class="navbar-brand" routerLink="/">
@@ -98,7 +110,10 @@
   </div>
 </header>
 <div class="fixed-btm-top">
-  <a href="#top-header" class="js-scroll-trigger scroll-to-top"
+  <span
+    class="scroll-to-top"
+    [style.opacity]="revealScrollToTop ? 1 : 0"
+    (click)="scrollToTop()"
     ><i class="bi bi-arrow-up"></i
-  ></a>
+  ></span>
 </div>
