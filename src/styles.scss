@@ -43,9 +43,14 @@ p {
 }
 a {
   text-decoration: none !important;
+  :focus {
+    outline: none;
+    text-decoration: none;
+  }
 }
 ul {
   padding: 0 !important;
+  margin: 0;
   li {
     list-style-type: none;
   }
@@ -83,6 +88,13 @@ h6 {
   font-family: "Quicksand", sans-serif !important;
   color: #07294d !important;
   font-weight: bolder;
+}
+.navbar-brand {
+  line-height: 25px;
+  text-align: center;
+  font-size: 20px;
+  font-weight: bolder;
+  color: white;
 }
 
 // h1 a,
