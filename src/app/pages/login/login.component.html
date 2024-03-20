@@ -12,21 +12,17 @@
         <!-- panel-login start -->
         <div class="authfy-panel panel-login text-center active">
           <div class="authfy-heading">
-            <h3 class="auth-title">Login to your account</h3>
-            <p>
-              Don't have an account?
-              <a class="lnk-toggler" data-panel=".panel-signup" href="#"
-                >Sign Up Free!</a
-              >
-            </p>
+            <h4 class="auth-title my-2">Login to your account</h4>
           </div>
           <!-- social login buttons start -->
           <div class="row social-buttons">
-            <div class="col-xs-4 col-sm-4">
+            <div class="col-xs-4 col-sm-4 google_button">
               <asl-google-signin-button
-                type="icon"
-                size="large"
+                type="standard"
                 shape="pill"
+                theme="outline"
+                text="continue_with"
+                size="large"
                 logo_alignment="center"
               ></asl-google-signin-button>
             </div>
@@ -85,6 +81,12 @@
                   ></app-button>
                 </div>
               </form>
+              <p>
+                Don't have an account?
+                <a class="lnk-toggler" data-panel=".panel-signup" href="#"
+                  >Sign Up Free!</a
+                >
+              </p>
             </div>
           </div>
         </div>
