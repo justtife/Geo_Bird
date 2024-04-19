@@ -1,12 +1,13 @@
+@import "../../shared/colors.scss";
 .site-navigation {
-  border-bottom: 1px solid #f5f7fa;
-  background-color: #26535e;
+  border-bottom: 1px solid $secondary-text;
+  background-color: $background-color;
   padding: 10px 0px;
   .navbar-toggler {
     border: none;
     span {
       font-size: 35px;
-      color: #eee;
+      color: $secondary-text;
     }
   }
 }
@@ -15,11 +16,20 @@
   top: 0px;
   width: 100%;
   z-index: 999;
-  transition: all 1s ease;
+  transform: translateY(-100%);
+  animation: slideDown 1s forwards;
 }
-
+@keyframes slideDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 .nav-tp.menu_fixed {
-  // background: #263B5E;
   border-color: transparent;
 }
 .navbar-nav {
@@ -44,15 +54,15 @@
   padding-bottom: 0.5rem;
   transition: background-color 0.1s;
   text-transform: capitalize;
-  border-bottom: 1px solid #eee;
+  border-bottom: 1px solid $secondary-text;
 }
 .dropdown-item:last-child {
   border-color: transparent;
 }
 .dropdown-item:hover {
-  color: #fff;
+  color: $secondary-text;
   text-decoration: none;
-  background-color: rgb(0, 92, 46);
+  background-color: $button-color;
 }
 .dropdown-toggle::after {
   display: none;
@@ -64,7 +74,7 @@
   border: 0px;
   padding: 0px;
   position: absolute;
-  border-top: 2px solid rgb(0, 92, 46);
+  border-top: 2px solid $button-color;
   min-width: 220px;
 }
 .nav-tp {
@@ -75,39 +85,30 @@
   position: relative;
 }
 .nav-tp .navbar-nav .nav-link {
-  color: #fff;
+  color: $secondary-text;
 }
 .fixed-btm-top {
   position: fixed;
   bottom: 25px;
   right: 25px;
   z-index: 10;
-}
-
-.fixed-btm-top .scroll-to-top {
-  display: inline-block;
-  text-align: center;
-  height: 50px;
-  background: #26535e;
-  color: #fff;
-  width: 50px;
-  line-height: 50px;
-  border-radius: 100%;
-  border: 1px solid white;
-}
-
-@media (max-width: 768px) {
-  .nav-tp {
-    margin-bottom: 0px;
-    background: #26535e;
+  .scroll-to-top {
+    display: inline-block;
+    text-align: center;
+    height: 50px;
+    background: $background-color;
+    color: $secondary-text;
+    width: 50px;
+    border: 1px solid $secondary-text;
+    border-radius: 50%;
+    cursor: pointer;
+    i {
+      line-height: 50px;
+      font-size: 15px;
+    }
   }
 }
-@media (max-width: 992px) {
-  .nav-tp {
-    margin-bottom: 0px;
-    background: #26535e;
-  }
-}
+
 @media (max-width: 992px) {
   .site-navigation {
     text-align: center;

@@ -1,3 +1,4 @@
+@import "./app/shared/colors.scss";
 html {
   font-family: sans-serif;
   line-height: 1.15;
@@ -13,17 +14,13 @@ body {
   margin: 0;
   text-align: left;
   font-weight: 400;
-  color: #0a2f85 !important;
+  color: $primary-text !important;
 }
-p {
-  color: #535967;
-  line-height: 28px;
-  font-size: 16px;
-}
+
 .subheading {
   text-transform: uppercase;
   font-size: 13px;
-  color: #385777;
+  color: $primary-text;
   font-weight: 600;
   letter-spacing: 2px;
   position: relative;
@@ -71,11 +68,6 @@ ul {
     margin-bottom: 30px;
   }
 }
-// .btn-main {
-//   color: #fff !important;
-//   border-color: #FF1949 !important;
-// }
-
 // /*--------------------
 //  TYPOGRAPHY
 // -----------------*/
@@ -86,7 +78,7 @@ h4,
 h5,
 h6 {
   font-family: "Quicksand", sans-serif !important;
-  color: #07294d !important;
+  color: $background-color !important;
   font-weight: bolder;
 }
 .navbar-brand {

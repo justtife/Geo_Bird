@@ -1,3 +1,4 @@
+@import "../../shared/colors.scss";
 .subscribe-section {
   position: relative;
   background-size: cover;
@@ -7,10 +8,8 @@
   z-index: 2;
   border-radius: 7px;
   overflow: hidden;
-  background: #263b5e;
-  .subheading {
-    color: #fff;
-  }
+  background: #004270;
+  color: $secondary-text !important;
 }
 .subscribe-form {
   position: relative;
@@ -38,13 +37,13 @@
 }
 
 .footer {
-  background: #26535e;
+  background: $background-color;
   padding: 80px 0px 0px;
   position: relative;
   color: rgba(255, 255, 255, 0.8);
   .footer-widget {
     .widget-title {
-      color: #fff;
+      color: $secondary-text !important;
       margin-bottom: 20px;
       font-weight: bold;
       font-size: 22px;

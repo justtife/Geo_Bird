@@ -1,6 +1,7 @@
+@import "../../shared/colors.scss";
 .banner-left {
   position: relative;
-  background: #26535e;
+  background: $background-color;
   padding: 80px 0px;
   clip-path: polygon(0 0, 100% 0, 100% 95%, 0 100%);
   &:before {
@@ -19,96 +20,58 @@
       margin: 20px 0px 35px;
       line-height: 45px;
       letter-spacing: 1.3px;
-      color: #fff !important;
+      color: $secondary-text !important;
     }
     p {
       margin-bottom: 35px;
-      color: #fff;
+      color: $secondary-text;
       opacity: 0.8;
       font-size: 16px;
       line-height: 25px;
     }
     .subheading {
-      color: #fff;
+      color: $secondary-text;
     }
   }
 }
-
 .banner-img3 {
   position: relative;
-  &:before {
-    position: absolute;
-    content: "";
-    right: 0px;
-    bottom: 0px;
-    width: 0;
-    height: 0;
-    border-bottom: 200px solid rgba(38, 59, 94, 0.2);
-    border-left: 200px solid transparent;
-  }
+  float: right;
   .img-block {
     position: relative;
     z-index: 2;
-    padding-right: 20px;
-    padding-bottom: 20px;
-    &:before {
-      position: absolute;
-      content: "";
-      right: 0px;
-      bottom: 0px;
-      width: 0;
-      height: 0;
-      border-bottom: 200px solid rgba(255, 255, 255, 0.1);
-      border-left: 200px solid transparent;
-      z-index: -1;
+    img {
+      border-radius: 50%;
+      border: 2px dashed $secondary-text;
+      padding: 15px;
     }
   }
 }
-
-
 .feature-item {
-  padding: 30px 15px;
+  padding: 30px 30px 0;
+  height: 100%;
   margin-bottom: 25px;
-  background: #fff;
+  background: $secondary-text;
   box-shadow: 0px 0px 10px 3px rgba(0, 0, 0, 0.08);
   border-radius: 5px;
   border-top: 2px solid #ff194b11;
-  display: flex;
-  transition: 0.4s;
-  transition: background-color 0.4s ease, border-color 0.4s ease,
-    color 0.4s ease;
   &:hover {
     margin-top: -10px;
-    .feature-icon {
-      color: rgb(19, 2, 78);
+    border-color: transparent;
+    background: $background-color;
+    .feature-icon,.feature-text {
+      color: $secondary-text;
     }
   }
   .feature-icon {
     font-size: 40px;
-    float: left;
-    margin-right: 25px;
-    color: #385777;
-    margin-top: 5px;
-    transition: 0.4s ease;
+    color: $background-color;
   }
   .feature-text {
     overflow: hidden;
     h4 {
       margin-bottom: 20px;
       transition: 0.4s;
-    }
-  }
-}
-.feature-item.feature-style-2 {
-  &:hover {
-    border-color: transparent;
-    background: rgb(19, 2, 78);
-    .feature-icon {
-      color: #fff;
-    }
-    h4,
-    p {
-      color: #fff;
     }
   }
 }
@@ -131,7 +94,6 @@
     font-weight: bold;
   }
 }
-
 .process {
   position: relative;
   .section-heading {
@@ -234,7 +196,7 @@
   .category-icon {
     font-size: 35px;
     margin: 0 auto 30px;
-    color: #fff;
+    color: $secondary-text;
     transition: 0.4s;
   }
 
@@ -246,12 +208,11 @@
   }
 
   h4 a {
-    color: #fff;
+    color: $secondary-text;
   }
 
   p {
     transition: 0.4s;
-    color: #fff;
+    color: $secondary-text;
   }
 }
-

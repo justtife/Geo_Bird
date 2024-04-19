@@ -1,25 +1,39 @@
+@import "../../shared/colors.scss";
 .btn-small {
   padding: 10px 24px !important;
 }
 .btn-large {
   padding: 10px 36px !important;
 }
+.btn-width {
+  width: 170px !important;
+  padding: 10px 0;
+}
 .btn-full {
   width: 100%;
   padding: 10px !important;
   display: block;
 }
-.btn-main {
-  color: rgb(19, 2, 78);
-  border: 1px solid rgb(19, 2, 78);
+@mixin button-styles($background-color) {
+  background: $background-color;
+  color: $button-color;
   font-weight: 900;
   border-radius: 25px;
   &:hover {
-    color: #fff;
-    background: rgb(19, 2, 78);
+    color: $secondary-text;
+    background: #004270;
+    border: none;
     box-shadow: 2px 2px 8px 3px rgba(0, 0, 0, 0.2);
   }
   i {
     margin-right: 10px;
   }
+}
+.btn-outline {
+  @include button-styles("transparent");
+  border: 1px solid $button-color;
+}
+.btn-main {
+  @include button-styles($button-color);
+  color: $secondary-text;
 }

@@ -7,9 +7,9 @@
   >
     <nav class="navbar navbar-expand-lg">
       <div class="container">
-        <a class="navbar-brand" routerLink="/">
+        <a class="navbar-brand" routerLink="/" style="color: #FEFFFF;">
           GeoBird <sup>®</sup><br /><span
-            style="font-size: 35px; color: rgb(19, 2, 78)"
+            style="font-size: 35px; color: #60B3D1"
             >Consult</span
           >
         </a>
@@ -90,12 +90,15 @@
           <app-button
             class="px-3"
             [text]="'Sign Up'"
+            [size]="'width'"
             [icon]="'box-arrow-in-right'"
           ></app-button>
           <app-button
             route="login"
             [text]="'Login'"
+            [size]="'width'"
             [icon]="'box-arrow-in-right'"
+            [btnStyle]="'main'"
           ></app-button>
         </div>
         <!-- / .navbar-collapse -->

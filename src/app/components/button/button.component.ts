@@ -10,6 +10,7 @@ import { RouterModule } from '@angular/router';
 export class ButtonComponent {
   @Input() text: string = "";
   @Input() icon: string = "";
-  @Input() size: 'large' | 'small' | 'full' = 'small';
+  @Input() btnStyle: "main" | "outline" = "outline";
+  @Input() size: 'large' | 'small' | 'full' | 'width' = 'small';
   @Input() route: string = ""
 }
