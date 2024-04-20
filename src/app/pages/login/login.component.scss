@@ -1,35 +1,34 @@
 @import "../../shared/colors.scss";
-.navbar-brand {
-  display: block;
-  margin: auto;
-}
+
 .authfy-panel-left {
   background-color: $secondary-text;
   height: 100vh;
+  .navbar-brand {
+    display: block;
+    margin: auto;
+  }
+  .authfy-login {
+    min-height: 510px;
+    position: relative;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+  }
+  .authfy-panel {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transform: translateX(-100%);
+    -webkit-transform: translateX(-100%);
+  }
 }
 
 .authfy-panel-right {
   background-color: $background-color;
   height: 100vh;
-}
-
-.authfy-login {
-  min-height: 510px;
-  position: relative;
-  top: 0;
-  left: 0;
-  overflow: hidden;
-}
-
-.authfy-panel {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  opacity: 0;
-  transform: translateX(-100%);
-  -webkit-transform: translateX(-100%);
 }
 
 .authfy-login .authfy-panel.active {
@@ -155,83 +154,9 @@
   vertical-align: middle;
 }
 
-.checkbox input[type="checkbox"] {
-  position: absolute;
-  right: 9000px;
-}
-
-.checkbox input[type="checkbox"] + .label-text:before,
-.checkbox input[type="checkbox"] + .label-text:after {
-  font-size: 11px;
-  display: inline-block;
-  width: 17px;
-  height: 17px;
-  padding: 2px;
-  margin-left: 0;
-  position: absolute;
-  top: 2px;
-  left: 0;
-}
-
-.checkbox input[type="checkbox"] + .label-text:before {
-  content: "";
-  background-color: #ffffff;
-  border: 1px solid #ced4da;
-  border-radius: 3px;
-  cursor: pointer;
-  transition: border 0.15s ease-in-out, color 0.15s ease-in-out;
-}
-
-.checkbox input[type="checkbox"] + .label-text:after {
-  background-color: $background-color;
-  color: #ffffff;
-  border-radius: 2px;
-  border-color: $background-color;
-  line-height: 1.4;
-}
-
-.checkbox input[type="checkbox"] {
-  opacity: 0;
-  z-index: 1;
-  cursor: pointer;
-}
-.checkbox input[type="checkbox"]:focus + .label-text:before {
-  outline: thin dotted;
-  outline: 5px auto -webkit-focus-ring-color;
-  outline-offset: -2px;
-}
-.checkbox input[type="checkbox"]:checked + .label-text:after {
-  font-family: "FontAwesome";
-  content: "\f00c";
-}
-
 /*--------------------*/
 /* 06. Responsive CSS */
 /*--------------------*/
-
-@media (min-width: 812px) {
-  .authfy-panel-left {
-    height: 100%;
-  }
-}
-
-@media (min-width: 834px) {
-  .authfy-panel-left {
-    height: 100vh;
-  }
-}
-
-@media (min-width: 846px) {
-  .authfy-panel-left {
-    height: 100%;
-  }
-}
-
-@media (min-width: 849px) {
-  .authfy-panel-left {
-    height: 100vh;
-  }
-}
 
 @media (min-width: 896px) and (max-width: 960px) {
   .authfy-panel-left {
