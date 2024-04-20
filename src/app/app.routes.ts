@@ -12,5 +12,9 @@ export const routes: Routes = [
     { path: 'about', component: AboutComponent },
     { path: 'contact', component: ContactComponent },
     { path: 'courses', component: CoursesComponent },
-    { path: 'login', component: LoginComponent }
+    { path: 'login', component: LoginComponent },
+    { path: 'signup', component: LoginComponent },
+    { path: 'forgot-password', component: LoginComponent }
+
+
 ];

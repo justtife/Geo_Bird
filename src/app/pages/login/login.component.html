@@ -10,7 +10,10 @@
       <!-- authfy-login start -->
       <div class="authfy-login">
         <!-- panel-login start -->
-        <div class="authfy-panel panel-login text-center px-4 active">
+        <div
+          class="authfy-panel panel-login text-center px-4"
+          [ngClass]="{ active: isActiveRoute('/login') }"
+        >
           <div class="authfy-heading mb-4">
             <h5 class="auth-title my-2">Login to your account</h5>
           </div>
@@ -66,7 +69,10 @@
                   </div>
                   <div>
                     <p class="forgotPwd">
-                      <a class="lnk-toggler" data-panel=".panel-forgot" href="#"
+                      <a
+                        class="lnk-toggler"
+                        data-panel=".panel-forgot"
+                        routerLink="/forgot-password"
                         >Forgot password?</a
                       >
                     </p>
@@ -79,7 +85,10 @@
               </form>
               <p class="py-2">
                 Don't have an account?
-                <a class="lnk-toggler" data-panel=".panel-signup" href="#"
+                <a
+                  class="lnk-toggler"
+                  data-panel=".panel-signup"
+                  routerLink="/signup"
                   >Sign Up</a
                 >
               </p>
@@ -88,7 +97,10 @@
         </div>
         <!-- ./panel-login -->
         <!-- panel-signup start -->
-        <div class="authfy-panel panel-signup text-center px-4">
+        <div
+          class="authfy-panel panel-signup text-center px-4"
+          [ngClass]="{ active: isActiveRoute('/signup') }"
+        >
           <div class="row">
             <div class="col-xs-12 col-sm-12">
               <div class="authfy-heading">
@@ -154,7 +166,10 @@
                   <app-button [size]="'full'" [text]="'Sign Up'"></app-button>
                 </div>
               </form>
-              <a class="lnk-toggler" data-panel=".panel-login" href="#"
+              <a
+                class="lnk-toggler"
+                data-panel=".panel-login"
+                routerLink="/login"
                 >Already have an account?</a
               >
             </div>
@@ -162,7 +177,10 @@
         </div>
         <!-- ./panel-signup -->
         <!-- panel-forget start -->
-        <div class="authfy-panel panel-forgot px-4">
+        <div
+          class="authfy-panel panel-forgot px-4"
+          [ngClass]="{ active: isActiveRoute('/forgot-password') }"
+        >
           <div class="row">
             <div class="col-xs-12 col-sm-12">
               <div class="authfy-heading">
@@ -190,12 +208,12 @@
                   <app-button [size]="'full'" [text]="'Login'"></app-button>
                 </div>
                 <div class="form-group">
-                  <a class="lnk-toggler" data-panel=".panel-login" href="#"
+                  <a class="lnk-toggler" data-panel=".panel-login" routerLink="/login"
                     >Already have an account?</a
                   >
                 </div>
                 <div class="form-group">
-                  <a class="lnk-toggler" data-panel=".panel-signup" href="#"
+                  <a class="lnk-toggler" data-panel=".panel-signup" routerLink="/signup"
                     >Don't have an account?</a
                   >
                 </div>
