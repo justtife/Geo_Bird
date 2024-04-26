@@ -11,5 +11,8 @@ import { ButtonComponent } from '../../components/button/button.component';
   styleUrl: './course.component.scss'
 })
 export class CourseComponent {
-
+  selectedOption = "Desc"
+  selectOption(option: string) {
+    this.selectedOption = option
+  }
 }

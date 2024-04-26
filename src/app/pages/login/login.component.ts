@@ -18,9 +18,9 @@ export class LoginComponent implements OnInit {
     return this.router.url === route;
   }
   ngOnInit(): void {
-    this.authService.authState.subscribe((user) => {
-      console.log(user)
-    });
+    // this.authService.authState.subscribe((user) => {
+    //   console.log(user)
+    // });
     this.http.getAllCountries().subscribe((response) => {
       const sortedData = response.sort((a: any, b: any) => {
         const nameA = a.name.common.toUpperCase();
