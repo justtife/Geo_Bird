@@ -12,7 +12,7 @@
     position: relative;
     top: 0;
     left: 0;
-    overflow: hidden;
+    // overflow: hidden;
   }
   .authfy-panel {
     position: absolute;
@@ -29,6 +29,7 @@
 .authfy-panel-right {
   background-color: $background-color;
   height: 100vh;
+  width: 100%;
 }
 
 .authfy-login .authfy-panel.active {
@@ -91,7 +92,7 @@
   padding: 12px 22px;
   border-radius: 3px;
   box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.1), 0 0 2px 0 rgba(0, 0, 0, 0.1);
-  border: solid 1px $background-color;
+  border: 1px solid  $background-color;
   outline: none;
 }
 
@@ -140,18 +141,6 @@
 
 .panel-signup .term-policy a {
   text-decoration: underline;
-}
-
-.authfy-panel-right .hero-heading {
-  display: table;
-  height: 100vh;
-  width: 100%;
-  text-align: center;
-}
-
-.authfy-panel-right .hero-heading .headline {
-  display: table-cell;
-  vertical-align: middle;
 }
 
 /*--------------------*/

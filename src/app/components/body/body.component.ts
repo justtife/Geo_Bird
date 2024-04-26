@@ -11,6 +11,6 @@ import AOS from 'aos';
 })
 export class BodyComponent implements OnInit{
   ngOnInit() {
-    AOS.init()
+    // AOS.init()
   }
 }

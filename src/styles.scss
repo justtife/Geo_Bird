@@ -16,7 +16,9 @@ body {
   font-weight: 400;
   color: $primary-text !important;
 }
-
+select {
+  cursor: pointer;
+}
 .subheading {
   text-transform: uppercase;
   font-size: 13px;
